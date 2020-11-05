@@ -8,23 +8,27 @@ var joinList = function() {
 
     // validate the entries
     if (emailAddress1 == "") {
-    	 errorMessage = "First email address entry required";
-		 alert(errorMessage);
+    	errorMessage = "First email address entry required";
+	document.getElementById("email_address1").nextElementSibling.firstChild.innerHTML= errorMessage;
     }
-	
+    else {
+  	document.getElementById("email_address1").nextElementSibling.firstChild.innerHTML= "";
+    }
     if (emailAddress2 == "") {
-    	errorMessage = "Second email address entry required";
-		alert(errorMessage);
-	} 
+    	errorMessage = "Second email address entry required";	
+	document.getElementById("email_address2").nextElementSibling.firstChild.innerHTML= errorMessage;
+    }
     else if (emailAddress2 != emailAddress1) {
     	errorMessage = "Email address entries must match";
-		alert(errorMessage);
-    } 
-	
+	document.getElementById("email_address2").nextElementSibling.firstChild.innerHTML= errorMessage;
+    }
+    else{
+	document.getElementById("email_address2").nextElementSibling.firstChild.innerHTML= "";
+    }
 	
     if (firstName == "") {
     	errorMessage = "First name entry required";
-		alert(errorMessage);
+	cument.getElementById("first_name").nextElementSibling.firstChild.innerHTML= errorMessage;
     }
 	
 
