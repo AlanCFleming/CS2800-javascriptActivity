@@ -30,7 +30,7 @@ var joinList = function() {
 
     // submit the form if all entries are valid/
     if (errorMessage == "") {
-      document.getElementById("email_form").submit(); 
+        document.getElementById("email_form").submit(); 
     }
 };
 
